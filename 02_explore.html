@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 101 Template</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/introductory.css">
+</head>
+<body>
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <include src="partial/side.html"></include>
+            <div class="main-section">
+                <div class="nav-section">
+                    <img src="images/music/index_07.gif" id="nav-section-image" alt="">
+                    <include src="partial/nav.html"></include>
+                </div>
+                <div class="content">
+                    <!-- content 放在這邊 -->
+                    <a href="02_explore_01amis.html">阿 美 族</a>
+                    <a href="#">泰 雅 族</a>
+                    <a href="#">排 灣 族</a>
+                    <a href="#">布 農 族</a>
+                    <a href="#">卑 南 族</a>
+                    <a href="#">魯 凱 族</a>
+                    <a href="#">北 鄒 族</a>
+                    <a href="#">南 鄒 族</a>
+                    <a href="#">賽 夏 族</a>
+                    <a href="#">達 悟 族</a>
+                    <a href="#">邵　族</a>
+                    <a href="#">噶 瑪 蘭 族</a>
+                    <a href="#">平 埔 族</a>
+                    <!-- end content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const link_background_image = 'images/bg-music.jpg';
+            const link_nav_image = 'images/music/index_07.gif';
+
+            const backgroundImage = document.getElementById("container-section-image")
+            backgroundImage.style.backgroundImage = "url('" + link_background_image + "')";
+            const navImage = document.getElementById("nav-section-image")
+            navImage.style.backgroundImage = "url('" + link_nav_image + "')";
+        }
+    </script>
+</body>
+</html>
