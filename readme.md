@@ -7,6 +7,7 @@
 ## Demo
 使用原始demo連結觀看flash版本的效果以及內容
 [原始demo連結](https://www.cabindesigntaipei.com/demo/arte/01%20aborigine/index.htm)
+[專案Demo](https://williamhsu17.github.io/cabin_art_book01/)
 
 需要使用chrome並啟用flash來觀看內容
 [Ruffle.rs](https://ruffle.rs/)
