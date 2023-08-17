@@ -11,10 +11,10 @@
 需要使用chrome並啟用flash來觀看內容
 [Ruffle.rs](https://ruffle.rs/)
 
-在firefox上面進行本機測試，需要
-
 ## 本機端測試
 #### 使用firefox
+在firefox上面進行本機測試，需要進行config修改：
+
 於瀏覽地址輸入 `about:config`
 
 將設定 `security.fileuri.strict_origin_policy` 設定為 `True`
