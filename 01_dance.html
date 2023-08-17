@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 101 Template</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/introductory.css">
+</head>
+<body>
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <include src="partial/side.html"></include>
+            <div class="main-section">
+                <div class="nav-section">
+                    <img src="images/music/index_07.gif" id="nav-section-image" alt="">
+                    <include src="partial/nav.html"></include>
+                </div>
+                <div class="content">
+                    <!-- content 放在這邊 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mx-3 mt-5 p-3" style="background-color: #015617;">
+                                <p style="color: yellow;">原住民舞蹈</p>
+                            </div>
+                            <div class="col-md-7 py-3" style="background-color: #c6dbbe;">
+                                <p style="color: black;">•  概論</p>
+                                <p style="color: black;">相形於台灣原住民音樂的豐富多元與脈絡清晰，至今我們對於原住民舞蹈的認識與了解，相當有限，或許因為舞蹈本來就是很難言傳，非得要身體力行才能掌握的吧！原住民的舞蹈就有這樣的特色：族人不需要上舞蹈學校拉筋，或學習專門的動作語彙；相對的，族人日經月累地浸淫於部落共同體的集體生活，耳濡目染習得了社會規範，包括禁忌、規則、秩序，與跳舞時所必須具備的身體技巧。簡言之，原住民舞蹈是一種生活舞蹈，要認識、了解、甚至欣賞原住民舞蹈，必須要從理解與尊重原住民的文化開始。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // 修改：按照頁面需求更換
+            const link_background_image = 'images/bg-dance.jpg';
+            const link_nav_image = 'images/intro_side/title_dance.gif';
+
+            const backgroundImage = document.getElementById("container-section-image")
+            backgroundImage.style.backgroundImage = "url('" + link_background_image + "')";
+            const navImage = document.getElementById("nav-section-image")
+            navImage.src = link_nav_image;
+        });
+    </script>
+</body>
+</html>

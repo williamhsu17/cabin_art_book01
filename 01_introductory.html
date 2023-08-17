@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="css/introductory.css">
 </head>
 <body>
-    <div class="container mx-auto container-section">
+    <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
             <include src="partial/side.html"></include>
             <div class="main-section">
-                <include src="partial/nav.html"></include>
+                <div class="nav-section">
+                    <img src="images/music/index_07.gif" id="nav-section-image" alt="">
+                    <include src="partial/nav.html"></include>
+                </div>
                 <div class="content">
                     <h3>概論</h3>
                     <p>台灣原住民各族群有著豐富而形式不一的樂舞文化，獨特的衣飾、嘹亮的歌聲與整齊有力的舞蹈動作，在在證明了原住民文化的風華。這樣豐富的樂舞文化，根植於原住民的集體社會生活，雖經歷物換星移仍得以存留下來。儘管原住民沒有自己的書寫文字，我們可以透過前人的文獻，一窺原住民樂舞的形貌：</p>
@@ -25,6 +28,17 @@
             </div>
         </div>
     </div>
-    
+    <script type="text/javascript">
+        window.onload=function(){
+            // 按照頁面需求更換
+            const link_background_image = 'images/bg-music.jpg';
+            const link_nav_image = 'images/music/index_07.gif';
+
+            const backgroundImage = document.getElementById("container-section-image")
+            backgroundImage.style.backgroundImage = "url('" + link_background_image + "')";
+            const navImage = document.getElementById("nav-section-image")
+            navImage.style.backgroundImage = "url('" + link_nav_image + "')";
+        }
+    </script>
 </body>
 </html>
