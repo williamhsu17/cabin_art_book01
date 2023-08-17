@@ -1,0 +1,62 @@
+body {
+    background-color: #005616;
+}
+.container-section {
+    width: 800px;
+    height: 460px;
+    background-image: url('../images/bg-music.jpg');
+}
+.side-section {
+    width: 175px;
+    height: 441px;
+}
+.main-section {
+    width: 605px;
+    height: 441px;
+}
+.nav-section {
+    height: 64px;
+    width: 540px;
+}
+.nav-links-section {
+    display: inline;
+}
+.content {
+    height: 280px;
+    margin-left: 60px;
+    margin-right: 100px;
+    color: white;
+    overflow: auto !important;
+}
+.content h3 {
+    font-size: large;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.content p {
+}
+.nav_link {
+    color: black;
+    font-size: medium;
+    float: right;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.page_list {
+    font-size: smaller;
+    color: #6600CC;
+}
+.list_title {
+    font-size: medium;
+}
+.page_list a {
+    color: #6600CC;
+}
+.group_link {
+    font-size: smaller;
+    color: #6600CC;
+    margin-left: 5px;
+}
+.left_image {
+    line-height: 0 !important;
+}
