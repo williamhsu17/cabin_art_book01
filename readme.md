@@ -20,7 +20,7 @@
 
 於瀏覽地址輸入 `about:config`
 
-將設定 `security.fileuri.strict_origin_policy` 設定為 `True`
+將設定 `security.fileuri.strict_origin_policy` 設定為 `False`
 
 ## 頁面紀錄
 頁面紀錄清單
