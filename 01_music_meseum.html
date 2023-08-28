@@ -8,6 +8,54 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/introductory.css">
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 400px;
+            /* height: 240px; */
+            margin-left: 50px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            height: 240px;
+            background-color: #f6f6f6;
+            overflow: auto;
+        }
+        .content-body p {
+            font-size: 12px;
+        }
+        .content-body ul {
+            padding-left: 15px;
+        }
+        .content-body ol {
+            padding-left: 15px;
+        }
+        .content-body li {
+            font-size: 10px;
+        }
+        .content-body li span {
+            font-weight: bold;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
     <script>
         const thisPage = '01_music';
         const thisSide = 'side_01';
@@ -22,14 +70,146 @@
                     <img src="images/introductory/index_07.gif" id="nav-section-image" alt="">
                     <include src="partial/nav.html"></include>
                 </div>
-                <div class="content ml-0">
+                <div class="content_group ml-0" style="display: block;">
                     <!-- content 放在這邊 -->
-                    <img src="images/introductory/music/03/main_01.gif" alt="">
+                    <style>
+                        .image_button {
+                            display: block;
+                            width: 34px;
+                            height: 26px;
+                            font-size: 0;
+                            position: relative;
+                        }
+                        #link_01 {background-image: url("images/introductory/music/03/list-c_01.gif");}
+                        #link_01:hover {background-image: url("images/introductory/music/03/list-c_01.gif");}
+                        
+                        #dropdown01, #dropdown02 {
+                            background-color: rgba(0, 0, 0, 0.8);
+                            position: absolute;
+                            padding-left: 40px;
+                        }
+                        .music_dropdown a {
+                            display: block;
+                            height: 20px;
+                            color: white;
+                            font-size: small;
+                        }
+                    </style>
+                    <div class="side_button_group" style="height: 43px; display: flex;">
+                        <img src="images/introductory/music/03/main_01.gif" alt="">
+                        <div class="image_button" id="link_01" onmouseover="showList('dropdown01')" onmouseout="removeList()" style="margin-top: 12px;">
+                            <div class="music_dropdown display-none" id="dropdown01" style="width: 194px; height: 80px; top: 26px;">
+                                <a href="" onclick="showContent('content2')">口琴</a>
+                                <a href="" onclick="showContent('content3')">竹筒</a>
+                                <a href="" onclick="showContent('content4')">銅鑼類</a>
+                                <a href="" onclick="showContent('content5')">薩鼓宜</a>
+                            </div>
+                        </div>
+                        <script>
+                            function showList(contentId) {
+                                // Hide all content divs first
+                                event.preventDefault();
+                                const contentDivs = document.querySelectorAll('.music_dropdown');
+                                contentDivs.forEach(
+                                    div => {div.style.display = 'none';}
+                                );
+
+                                document.getElementById(contentId).style.display = 'block';
+                            }
+                            function removeList() {
+                                // Hide all content divs first
+                                event.preventDefault();
+                                const contentDivs = document.querySelectorAll('.music_dropdown');
+                                contentDivs.forEach(
+                                    div => {div.style.display = 'none';}
+                                );
+                            }
+                        </script>
+                    </div>
+                    <div class="content" id="content1" style="height: 240px; background-color: #ecebda;">
+                        <div class="content-body" style="height: 240px;">
+                            <p>由於台灣曾被日本殖民五十年，關於台灣原住民樂器的調查及研究，主要皆由日本學者所執耳，其主要人物，在音樂關係的有田邊尚雄、黑澤隆朝、竹中重雄、一慎三郎等諸位先生，在人類學方面有伊能嘉矩、鹿野忠雄、佐藤文一等諸位先生。此外，台灣總督府臨時台灣舊慣調查會刊行的《台灣蕃族志》（森丑之助），同《蕃族調報告書》（佐山融吉編），也分別從各個不同的角度，在雜誌發表他們的研究與調查。
+                            <p>其他的民族學關係者進行調查的有李卉、凌曼立、 Joseph Lenherr 諸位先生。李卉和黑澤隆朝皆發表了有關口之詳細論文，黑澤主要的敘述是台灣口琴的分佈、名稱和用途，李卉則更廣泛地將台灣口琴與亞洲各地土著作一比較。佐藤文一、竹中重雄、 J.Lenherr 等對於土著族所有樂器的研究報告，分別刊載在有關民族學的雜誌上。除了李卉以外，大都是對當時時態的觀察加以調查，而未涉及到古文獻上所記載的清朝原住民的歌謠的樂器。佐藤（主要是歌謠），李卉（口琴）稍稍能涉獵到早期，至於樂器方面之論文尚無人問津。</p>
+                            <p>關於清朝文獻方面，原住民音樂（樂器、歌謠、舞蹈）的古文獻，主要是記載在明末文獻「東蕃記與清代官史所編撰一系列的府志、縣志、地方誌及記行記上。根據這些文獻可以判斷過去住民樂器的使用，較諸現今盛行許多，而且和生活的關連十分密切。下表是原住民一些樂器的由來：</p>
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>樂器名稱</th>
+                                        <th>族語稱呼</th>
+                                        <th>由來</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>木鼓</td>
+                                        <td>
+                                            阿美族： satenovi<br>
+                                            泰雅族： hon-ngu
+                                        </td>
+                                        <td>織布機</td>
+                                    </tr>
+                                    <tr>
+                                        <td>竹鼓</td>
+                                        <td>泰雅族： takan</td>
+                                        <td>背水的容器</td>
+                                    </tr>
+                                    <tr>
+                                        <td>木琴</td>
+                                        <td>
+                                            賽德克族：<br>
+                                            阿美族： kokag
+                                        </td>
+                                        <td>趕鳥的工具</td>
+                                    </tr>
+                                    <tr>
+                                        <td>弓琴</td>
+                                        <td>布農族： ladol</td>
+                                        <td>射箭用的弓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>杵樂</td>
+                                        <td>
+                                            布農族： madodol<br>
+                                            邵族： masmabiya
+                                        </td>
+                                        <td>舂米工具</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content2">
+                        <div class="content-body">
+                            <p style="font-weight: bold;">•  口琴</p>
+                            <p>除雅美族之外，口琴是原住民最普遍的樂器，過去平埔族也經常使用口琴，其用途很廣，主要用在年輕男女求愛。口琴的簧數從單簧到五簧（就所有民族中，台灣原住民的口琴簧數為最多）。特別是泰雅和布農族更喜歡使用口琴來宣洩情感。口琴分繩口琴和彈口琴，但是土著族使用的口琴和蝦夷人 Mukkri 同樣都是繩口琴。布農族尤其喜歡單簧來作泛音奏法，泛音是 do 、 re 、 mi 、 sol ，這與布農族的歌謠音階一致，多簧口琴主要以泰雅族的賽德克亞族為最多，除獨奏外，也興合奏。口琴的構造有竹台竹竹簧、竹台金屬簧、金屬台金屬簧、骨台金屬　簧等。其中以竹台金屬簧為最多。</p>
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content3">
+                        <div class="content-body">
+                            <p style="font-weight: bold;">•  竹筒</p>
+                            <p>這是長約五十公分的竹筒，作為邵族杵樂伴奏之用。</p>
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content4">
+                        <div class="content-body">
+                            <p style="font-weight: bold;">•  銅鑼類</p>
+                            <p>過去平埔族曾使用銅鑼，而現在只有巴則海族仍有銅鑼，這是從漢族傳進來，或是從很早以前就有了呢？實在不得而知。</p>
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content5">
+                        <div class="content-body">
+                            <p style="font-weight: bold;">•  薩鼓宜</p>
+                            <p>平埔族使用薩鼓宜有三種用途： (1) 公文傳達之用 (2) 防止夜盜之用 (3) 孩童遊戲之用，特別是在夜裡村落間的傳達，把薩鼓宜配帶在腰際行走，因為有聲音，故可消除寂寞和恐懼，用途依種族而不同。阿美族稱此為 tegelin ，在清朝文獻則稱為薩鼓宜、卓機輪，後者閩南語（台語）發音與阿美族的相似。</p>
+                        </div>
+                    </div>
+                    
                     <!-- end content -->
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/content.js"></script>
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(event) {
             // 按照頁面需求更換
