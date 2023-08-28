@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣原住民-樂舞欣賞</title>
+
+    <script src="js/htmlinclude.js"></script>
+    <include src="partial/header.html"></include>
+    <link rel="stylesheet" href="css/introductory.css">
+    <style>
+        .display-none {
+            display: none;
+        }
+        .main-section {
+            position: relative;
+        }
+        .content {
+            width: 320px;
+            /* height: 240px; */
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            /* border: 1px solid #aaa; */
+            background-color: transparent;
+            color: #363637;
+            font-size: smaller;
+        }
+        .content-title-image {
+            width: 100%;
+        }
+        .content-body {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            height: 240px;
+            background-color: #f6f6f6;
+            overflow: auto;
+        }
+        .content-body p {
+            font-size: 10px;
+        }
+        .content-body ul {
+            padding-left: 15px;
+        }
+        .content-body ol {
+            padding-left: 15px;
+        }
+        .content-body li {
+            font-size: 10px;
+        }
+        .content-body li span {
+            font-weight: bold;
+        }
+        .content-body img {
+            width: 100%;
+        }
+    </style>
+    <script>
+        const thisPage = '01_music';
+        const thisSide = 'side_01';
+    </script>
+</head>
+<body>
+    <div class="container mx-auto container-section" id="container-section-image">
+        <div class="row">
+            <include src="partial/side.html"></include>
+            <div class="main-section">
+                <div class="nav-section">
+                    <img src="images/introductory/index_07.gif" id="nav-section-image" alt="">
+                    <include src="partial/nav.html"></include>
+                </div>
+                <div class="content_group ml-0" style="display: flex;">
+                    <!-- content 放在這邊 -->
+                    <style>
+                        .image_button {
+                            display: block;
+                            width: 194px;
+                            height: 33px;
+                            font-size: 0;
+                            position: relative;
+                        }
+                        #link_01 {background-image: url("images/introductory/music/02/main_04.gif");}
+                        #link_02 {background-image: url("images/introductory/music/02/main_05.gif");}
+                        #link_01:hover {background-image: url("images/introductory/music/02/main-c_04.gif");}
+                        #link_02:hover {background-image: url("images/introductory/music/02/main-c_05.gif");}
+                        #dropdown01, #dropdown02 {
+                            background-color: rgba(0, 0, 0, 0.5);
+                            position: absolute;
+                        }
+                        .music_dropdown a {
+                            display: block;
+                            height: 20px;
+                            color: white;
+                        }
+                    </style>
+                    <div class="side_button_group">
+                        <img src="images/introductory/music/02/main_01.gif" alt="">
+                        <div class="image_button" id="link_01" onmouseover="showList('dropdown01')">
+                            <div class="music_dropdown display-none" id="dropdown01" style="width: 194px; height: 80px; bottom: 33px;">
+                                <a href="">朗誦唱法</a>
+                                <a href="">曲調唱法 曲調唱法</a>
+                                <a href="">對唱法</a>
+                                <a href="">領唱與和腔唱法</a>
+                            </div>
+                        </div>
+                        <a href="#" class="image_button" id="link_02" onclick="showContent('content3')"></a>
+                        <!-- <div class="dropdown02">
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                            <a href="#">Option 4</a>
+                        </div> -->
+                        <script>
+                            function showList(contentId) {
+                                // Hide all content divs first
+                                event.preventDefault();
+                                const contentDivs = document.querySelectorAll('.music_dropdown');
+                                contentDivs.forEach(
+                                    div => {div.style.display = 'none';}
+                                );
+
+                                // Show the selected content
+                                document.getElementById(contentId).style.display = 'block';
+                                // document.getElementById(contentId).style.position = 'absolute';
+                                // document.getElementById(contentId).style.bottom = '33px';
+                            }
+                        </script>
+                    </div>
+                    <div class="content" id="content1" style="height: 240px; background-color: #ecebda;">
+                        <div class="content-body" style="height: 240px;">
+                            <p>台灣原住民的音樂表現，以歌唱為主，樂器為副。原住民歌唱方式以齊唱與和腔二種最普遍。歌謠演唱方式涵括最單純到最複雜層次的演唱方式，諸如單音唱法、複音唱法、和聲唱法、乃至於奇異的異音唱法都有，豐富的程度令人嘆為觀止，所以自二十世紀初以來即受到國際民族音樂學界的普遍重視，並且贏得「世界音樂寶庫之一」的美譽。 原住民音樂最令學者驚異讚嘆的，在於他們傳統的複音唱法，這種非經外力，自然就能唱出十二世紀以後的西方複音技巧，如平行唱法、輪唱法、頑固低音唱法，乃至和聲唱法，顯現當時原住民音樂文化已有高度發展。</p>
+
+                            <p>此外，原住民的歌謠，由於族群不同，而形成各種不同之歌唱方式。如：莊嚴之男聲合唱、混聲合唱、輪唱、複旋律形式歌唱以及普通獨唱等，各族皆有其獨特之唱法，其歌詞與虛字，則亦因各種族之語言不同而互異。至於歌唱方式則有單音歌唱（獨唱或齊唱）、和聲歌唱及複旋律歌唱等。 原住民歌唱的形式包括了 單音唱法、複音唱法及和聲唱法。</p>
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content2">
+                        <div class="content-body">
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content3">
+                        <div class="content-body">
+                        </div>
+                    </div>
+                    <div class="content display-none" id="content4">
+                        <div class="content-body">
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/content.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // 按照頁面需求更換
+            const link_background_image = 'images/introductory/bg-music.jpg';
+            const link_nav_image = 'images/intro_side/title_music.gif';
+
+            const backgroundImage = document.getElementById("container-section-image")
+            backgroundImage.style.backgroundImage = "url('" + link_background_image + "')";
+            const navImage = document.getElementById("nav-section-image")
+            navImage.src = link_nav_image;
+        });
+    </script>
+</body>
+</html>
