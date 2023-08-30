@@ -34,11 +34,11 @@
             padding-right: 10px;
             padding-top: 10px;
             height: 240px;
-            background-color: #f6f6f6;
+            background-color: #ECEBDB;
             overflow: auto;
         }
         .content-body p {
-            font-size: 10px;
+            font-size: 13px;
         }
         .content-body ul {
             padding-left: 15px;
@@ -47,7 +47,7 @@
             padding-left: 15px;
         }
         .content-body li {
-            font-size: 10px;
+            font-size: 13px;
         }
         .content-body li span {
             font-weight: bold;
@@ -55,6 +55,11 @@
         .content-body img {
             width: 100%;
         }
+		.textbox_video {
+			background-color:#F3F3F3;			
+			padding:10px; 					
+		}
+		
     </style>
     <script>
         const thisPage = '01_music';
@@ -101,18 +106,19 @@
                         <div class="image_button" id="link_01" onmouseover="showList('dropdown01')" onmouseout="removeList()">
                             <div class="music_dropdown display-none" id="dropdown01" style="width: 194px; height: 80px; bottom: 33px;">
                                 <a href="" onclick="showContent('content2')">朗誦唱法</a>
-                                <a href="" onclick="showContent('content3')">曲調唱法 曲調唱法</a>
+                                <a href="" onclick="showContent('content3')">曲調唱法</a>
                                 <a href="" onclick="showContent('content4')">對唱法</a>
                                 <a href="" onclick="showContent('content5')">領唱與和腔唱法</a>
                             </div>
                         </div>
                         <div class="image_button" id="link_02" onmouseover="showList('dropdown02')" onmouseout="removeList()">
-                            <div class="music_dropdown display-none" id="dropdown02" style="width: 194px; height: 100px; top: 33px;">
+                            <div class="music_dropdown display-none" id="dropdown02" style="width: 194px; height: 120px; top: 33px;">
                                 <a href="" onclick="showContent('content6')">異音唱法</a>
-                                <a href="" onclick="showContent('content7')">對位唱法 </a>
+                                <a href="" onclick="showContent('content7')">對位唱法</a>
                                 <a href="" onclick="showContent('content8')">平行唱法</a>
-                                <a href="" onclick="showContent('content9')">持續低音與頑固音唱法</a>
-                                <a href="" onclick="showContent('content10')">其　他</a>
+								<a href="" onclick="showContent('content9')">疊瓦唱法</a>
+                                <a href="" onclick="showContent('content10')">持續低音與頑固音唱法</a>
+                                <a href="" onclick="showContent('content11')">其　他</a>
                             </div>
                         </div>
                         <script>
@@ -138,25 +144,38 @@
                     </div>
                     <div class="content" id="content1" style="height: 240px; background-color: #ecebda;">
                         <div class="content-body" style="height: 240px;">
-                            <p>台灣原住民的音樂表現，以歌唱為主，樂器為副。原住民歌唱方式以齊唱與和腔二種最普遍。歌謠演唱方式涵括最單純到最複雜層次的演唱方式，諸如單音唱法、複音唱法、和聲唱法、乃至於奇異的異音唱法都有，豐富的程度令人嘆為觀止，所以自二十世紀初以來即受到國際民族音樂學界的普遍重視，並且贏得「世界音樂寶庫之一」的美譽。 原住民音樂最令學者驚異讚嘆的，在於他們傳統的複音唱法，這種非經外力，自然就能唱出十二世紀以後的西方複音技巧，如平行唱法、輪唱法、頑固低音唱法，乃至和聲唱法，顯現當時原住民音樂文化已有高度發展。</p>
+                            <p>台灣原住民的音樂表現，以歌唱為主，樂器為副。原住民歌唱方式以齊唱與和腔二種最普遍。歌謠演唱方式涵括最單純到最複雜層次的演唱方式，諸如單音唱法、複音唱法、和聲唱法、乃至於奇異的異音唱法都有，豐富的程度令人嘆為觀止，所以自二十世紀初以來即受到國際民族音樂學界的普遍重視，並且贏得「世界音樂寶庫之一」的美譽。原住民音樂最令學者驚異讚嘆的，在於他們傳統的複音唱法，這種非經外力，自然就能唱出十二世紀以後的西方複音技巧，如平行唱法、輪唱法、頑固低音唱法，乃至和聲唱法，顯現當時原住民音樂文化已有高度發展。</p>
 
-                            <p>此外，原住民的歌謠，由於族群不同，而形成各種不同之歌唱方式。如：莊嚴之男聲合唱、混聲合唱、輪唱、複旋律形式歌唱以及普通獨唱等，各族皆有其獨特之唱法，其歌詞與虛字，則亦因各種族之語言不同而互異。至於歌唱方式則有單音歌唱（獨唱或齊唱）、和聲歌唱及複旋律歌唱等。 原住民歌唱的形式包括了 單音唱法、複音唱法及和聲唱法。</p>
+                            <p>此外，原住民的歌謠，由於族群不同，而形成各種不同之歌唱方式。如：莊嚴之男聲合唱、混聲合唱、輪唱、複旋律形式歌唱以及普通獨唱等，各族皆有其獨特之唱法，其歌詞與虛字，則亦因各種族之語言不同而互異。至於歌唱方式則有單音歌唱（獨唱或齊唱）、和聲歌唱及複旋律歌唱等。原住民歌唱的形式包括了單音唱法、複音唱法及和聲唱法。</p>
+							
                         </div>
                     </div>
                     <div class="content display-none" id="content2">
                         <div class="content-body">
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/omCp17ZTv1w" target="_blank" rel="noopener noreferrer">單音唱法 ─ 朗誦唱法</a><p>卑南族大獵祭歌</p></div>
+							<br>
                         </div>
                     </div>
                     <div class="content display-none" id="content3">
                         <div class="content-body">
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/6YbphimY_9k" target="_blank" rel="noopener noreferrer">單音唱法 ─ 曲調唱法</a><p>卑南族青年升級歌</p></div>
+							<br>
                         </div>
                     </div>
                     <div class="content display-none" id="content4">
                         <div class="content-body">
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/wk9V01NPkp0" target="_blank" rel="noopener noreferrer">單音唱法 ─ 對唱法</a><p>阿美族祭司休閒歌</p></div>
+							<br>
                         </div>
                     </div>
                     <div class="content display-none" id="content5">
                         <div class="content-body">
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/_sRNjbmmdJs" target="_blank" rel="noopener noreferrer">單音唱法 ─ 領唱與和腔唱法</a><p>阿美族llisin祭歌</p></div>
+							<br>
                         </div>
                     </div>
                     <div class="content display-none" id="content6">
@@ -166,6 +185,12 @@
 
                             <p style="font-weight: bold;">例：達悟族Mikaliyak</p>
                             <p>Mikaliyak專指用在工作房落成當夜，同部落的男女齊聚在工作房，一齊吟唱至天亮的歌謠。這是達悟族唯一的異音合唱歌謠，一般由男性族人先領唱，中間曲調上揚，並加入拍手聲，之後女聲加入，由原先平行三度變化為不協和的異音合唱。其歌詞大致和家屋落成歌或新船下水典禮歌相似，以敘事史詩的形式，吟誦祖先遷移、祈祝人丁興旺或漁獲豐饒。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/j9kepTdjyqA" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							異音唱法</a><p>達悟族 Mikaliyak</p></div>
+							<br>
+							
                         </div>
                     </div>
                     <div class="content display-none" id="content7">
@@ -174,26 +199,59 @@
                             <p>對位唱法就是是由兩個或兩個以上的旋律或聲部，兩者同時發聲而組成，雖然聲部彼此之間的旋律與節奏都有所差異，但都具有自己的特色且個別獨立，並共同構成音樂的整體。在非歐洲的傳統音樂中，所使用的對位方式是相當自由的，並沒有任何的規則存在。</p>
 
                             <p style="font-weight: bold;">例：阿美族老人聚會歌</p>
-                            <p>「阿美族老人聚會歌」通常由6-7位不等的男女族人，分成2-4聲部，先由一名即興技巧優秀的歌者領唱一段，這段領唱音樂並預示了對位模式，以不同的獨立聲部平行、斜行、反行而形成自由對位的唱法。各個聲部雖然歌詞不同，但最後都會回到同樣的音高作為結束音或小結尾。因此阿美族的對位唱法通常是由同一階層的歌者一起吟唱，因為對位唱法不但需要一位即興能力強的領唱歌者，更需要絕佳的默契，也唯有朝夕相處的夥伴們才能勝任。阿美族自由對位唱法以卑南群馬蘭部落最為著稱。</p>
+                            <p>「阿美族老人聚會歌」通常由 6-7 位不等的男女族人，分成 2-4 聲部，先由一名即興技巧優秀的歌者領唱一段，這段領唱音樂並預示了對位模式，以不同的獨立聲部平行、斜行、反行而形成自由對位的唱法。各個聲部雖然歌詞不同，但最後都會回到同樣的音高作為結束音或小結尾。因此阿美族的對位唱法通常是由同一階層的歌者一起吟唱，因為對位唱法不但需要一位即興能力強的領唱歌者，更需要絕佳的默契，也唯有朝夕相處的夥伴們才能勝任。阿美族自由對位唱法以卑南群馬蘭部落最為著稱。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/upY5hkWgsHQ" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							對位唱法</a><p>阿美族馬蘭部落老人聚會歌</p></div>
+							<br>
                         </div>
                     </div>
                     <div class="content display-none" id="content8">
                         <div class="content-body">
                             <p style="font-weight: bold;">平行唱法：</p>
                             <p>平行唱法是指兩個聲部之間，保持固定的音程（通常是四、五度）作同方向的進行。例如布農族採用了泛音列中八、五、三度形成的自然泛音音階作為基本旋律，並在此基礎上，發展出奧加農式（Organum）之四、五度平行和絃。此外，北鄒戰祭（mayasvi）中的迎神曲則為平行唱法的代表。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/bSrdHoJoOcU" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							平行唱法</a><p>北鄒族迎神曲</p></div>
+							<br>							
                         </div>
                     </div>
-                    <div class="content display-none" id="content9">
+					<div class="content display-none" id="content9">
+                        <div class="content-body">
+                            <p style="font-weight: bold;">疊瓦唱法：</p>
+                            <p>疊瓦唱法在非歐洲的傳統音樂中，除了自然的卡農形式的存在之外，另外還有一種對唱（Antiphony）之下所造成的演唱形式，其演唱形式即為兩個合唱群演唱時，第二個合唱群以不同的旋律，在第一個合唱群演唱一樂句的最後一個音、或任何時間中加入，形成二聲部交替演唱以及聲部重疊的現象，民族音樂學上將這種現象稱之為「疊置」（overlapping）。若以圖表示這種疊置的現象，則形成似屋瓦交疊的圖形，因此在法文中又稱之為「疊瓦式」（Tuilage）複音。</p>
+							<p style="font-weight: bold;">例：南投賽德克群民歌 uyas lumuuli</p>
+							<p>	這首歌是泰雅族未婚女子一起聚集跳舞時唱的歌曲。由一位舞藝精湛的已婚婦女領唱，未婚女性則在領唱者尚未唱完前跟著覆誦一次，形成優美的疊瓦形式。這樣的歌唱形式，原本只見於霧社附近的西賽德克群，後也傳播至鄰近的親愛村（澤敖列群）。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/hxwWUsJ2XqQ" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							疊瓦唱法</a><p>泰雅族賽德克群民歌 uyas lumuuli</p></div>
+							<br>							
+                        </div>
+                    </div>
+					<div class="content display-none" id="content10">
                         <div class="content-body">
                             <p style="font-weight: bold;">持續低音與頑固音唱法：</p>
-                            <p>單調的低音，或持續不變的低音而言，一般稱之為「持續低音」(drone)與；而「頑固音」(ostinato)的現象，是於某一聲部中，將一個簡短的旋律，或一個在固定音高上的節奏，有系統、規律地循環反覆，縱貫整首作品或某一個樂段。這種「重複性」的性質，亦為「頑固音」形成的主要因素。而「頑固音」與「持續音」一樣都具有不變的特質之外，也都扮演著支撐其他旋律聲部的角色。</p>
+                            <p>單調的低音，或持續不變的低音而言，一般稱之為「持續低音」（drone）與；而「頑固音」（ostinato）的現象，是於某一聲部中，將一個簡短的旋律，或一個在固定音高上的節奏，有系統、規律地循環反覆，縱貫整首作品或某一個樂段。這種「重複性」的性質，亦為「頑固音」形成的主要因素。而「頑固音」與「持續音」一樣都具有不變的特質之外，也都扮演著支撐其他旋律聲部的角色。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/0Bl52G3bhIw" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							持續低音與頑固音唱法</a><p>阿美族送靈之歌</p></div>
+							<br>							
                         </div>
                     </div>
-                    <div class="content display-none" id="content10">
+                    <div class="content display-none" id="content11">
                         <div class="content-body">
                             <p style="font-weight: bold;">複音其他唱法：</p>
-                            <p>無法歸類於上述複音唱法的特殊表現，最獨特的例子莫過於布農族的《祈禱小米豐收歌》(Pasi but but)，由領唱起音後，以泛音半音階唱法逐步攀升，聲部間起初聽起來似乎不甚和諧，有異音唱法的味道，歌聲持續到唱出和諧完美的和聲才停止。</p>
-                        </div>
+                            <p>無法歸類於上述複音唱法的特殊表現，最獨特的例子莫過於布農族的《祈禱小米豐收歌》（Pasi but but），由領唱起音後，以泛音半音階唱法逐步攀升，聲部間起初聽起來似乎不甚和諧，有異音唱法的味道，歌聲持續到唱出和諧完美的和聲才停止。</p>
+							
+							<br>
+							<div class="textbox_video"><a href="https://youtu.be/c8mwHKwfvqc" target="_blank" rel="noopener noreferrer">範例欣賞 ─ 
+							複音其他唱法</a><p>布農族祈禱小米豐收歌</p></div>
+							<br>
+						 </div>
                     </div>
                     <!-- end content -->
                 </div>
@@ -204,7 +262,7 @@
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(event) {
             // 按照頁面需求更換
-            const link_background_image = 'images/introductory/bg-music.jpg';
+            const link_background_image = 'images/introductory/bg-life.jpg';
             const link_nav_image = 'images/intro_side/title_music.gif';
 
             const backgroundImage = document.getElementById("container-section-image")
