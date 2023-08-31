@@ -9,13 +9,99 @@
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/introductory.css">
     
-   <style>
-   a{
-        color:#FF0;
-    }
-	a:hover{
-        color:#F00;		
-		}
+    <style>
+        a{
+            color:#FF0;
+        }
+        a:hover{
+            color:#F00;		
+        }
+        code, code a{
+            color: #100e72 !important;
+        }
+        .tree_1 {
+            background-color: #dbf6d3;
+        }
+        .tree_2 {
+            background-color: #f9ccff;
+        }
+        .tree_3 {
+            background-color: #ccd2ff;
+        }
+        /* It's supposed to look like a tree diagram */
+        .tree, .tree ul, .tree li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .tree {
+            margin: 0 0 1em;
+            text-align: center;
+        }
+        .tree, .tree ul {
+            display: table;
+        }
+        .tree ul {
+        width: 100%;
+        }
+            .tree li {
+                display: table-cell;
+                padding: .5em 0;
+                vertical-align: top;
+            }
+                /* _________ */
+                .tree li:before {
+                    outline: solid 1px #666;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                .tree li:first-child:before {left: 50%;}
+                .tree li:last-child:before {right: 50%;}
+
+                .tree code, .tree span {
+                    border: solid .1em #666;
+                    border-radius: .2em;
+                    display: inline-block;
+                    margin: 0 .2em .5em;
+                    padding: .2em .5em;
+                    position: relative;
+                }
+                /* If the tree represents DOM structure */
+                .tree code {
+                    font-family: monaco, Consolas, 'Lucida Console', monospace;
+                }
+
+                    /* | */
+                    .tree ul:before,
+                    .tree code:before,
+                    .tree span:before {
+                        outline: solid 1px #666;
+                        content: "";
+                        height: .5em;
+                        left: 50%;
+                        position: absolute;
+                    }
+                    .tree ul:before {
+                        top: -.5em;
+                    }
+                    .tree code:before,
+                    .tree span:before {
+                        top: -.55em;
+                    }
+
+        /* The root node doesn't connect upwards */
+        .tree > li {margin-top: 0;}
+            .tree > li:before,
+            .tree > li:after,
+            .tree > li > code:before,
+            .tree > li > span:before {
+            outline: none;
+            }
 	</style>
     
 </head>
@@ -28,9 +114,101 @@
                     <img src="images/explore/topmenu_01.gif" id="nav-section-image" alt="">
                     <include src="partial/nav.html"></include>
                 </div>
-                <div class="content" style="">
+                <div class="content" style="background-color: white; margin-right: 60px; margin-left: 26px; padding-left: 30px; padding-top: 30px;">
                     <!-- content 放在這邊 -->
-
+                    <figure>
+                        <ul class="tree">
+                            <li><code style="background-color: yellow;"><a href="index.html">首頁</a></code>
+                                <ul>
+                                    <li><code class="tree_1">入門篇</code>
+                                        <ul>
+                                            <li><code class="tree_2">原住民音樂</code>
+                                                <ul>
+                                                    <li><code class="tree_1">部落之歌</code>
+                                                        <ul>
+                                                            <li><code class="tree_1">音樂教室</code>
+                                                                <ul>
+                                                                    <li><code class="tree_1">樂器家族</code></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><code class="tree_2">原住民的舞蹈</code>
+                                                <ul>
+                                                    <li><code class="tree_1">內涵</code>
+                                                        <ul>
+                                                            <li><code class="tree_1">特色</code></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><code class="tree_1">探索篇</code>
+                                        <ul>
+                                            <li><code class="tree_3">阿美族</code>
+                                                <ul>
+                                                    <li><code class="tree_3">泰雅族</code>
+                                                        <ul>
+                                                            <li><code class="tree_3">排灣族</code>
+                                                                <ul>
+                                                                    <li><code class="tree_3">布農族</code>
+                                                                        <ul>
+                                                                            <li><code class="tree_3">卑南族</code>
+                                                                                <ul>
+                                                                                    <li class="tree_3"><code>魯凱族</code>
+                                                                                        <ul>
+                                                                                            <li class="tree_3"><code>北鄒族</code></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><code class="tree_3">南鄒族</code>
+                                                <ul>
+                                                    <li><code class="tree_3">賽夏族</code>
+                                                        <ul>
+                                                            <li><code class="tree_3">達悟族</code>
+                                                                <ul>
+                                                                    <li><code class="tree_3">邵族</code>
+                                                                        <ul>
+                                                                            <li><code class="tree_3">邵族</code>
+                                                                                <ul>
+                                                                                    <li><code class="tree_3">噶瑪蘭族</code>
+                                                                                        <ul>
+                                                                                            <li><code class="tree_3">平埔族</code></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><code class="tree_1">資源教室</code>
+                                        <ul>
+                                            <li><code class="tree_1">網站導覽</code></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </figure>
                     
              <p>1.<a href="01_introductory.html">入門篇</a><br />
       1-1<a href="01_music.html">原住民的音樂</a><br />
