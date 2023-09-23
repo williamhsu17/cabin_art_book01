@@ -34,16 +34,17 @@
 			color:#FFF;
 			padding:15px; 
 			margin-bottom:30px;
+			border-radius:10px;
 			
 		}
 		
 		
 		.textbox_video {
-			background-color:#F3F3F3;
-			
+			background-color:#F3F3F3;			
 			padding:10px; 
+			border-radius:10px;
 					
-		}
+		}	
 
 		.title2 {
 			color:#03C;
@@ -106,11 +107,35 @@
 
                 </div>
                 <div class="button-group">
-                    <a href="#" onclick="showContent('content1')"><img src="images/explore/model_12.gif" alt=""></a>
-                    <a href="#" onclick="showContent('content2')"><img src="images/explore/model_13.gif" alt=""></a>
-                    <a href="#" onclick="showContent('content3')"><img src="images/explore/model_18.gif" alt=""></a>
-                    
+                   
+          <style>
+             .image_button {
+                 display:inline-block;
+ 				 height: 48px;
+              }
+
+            #nav_01 {background-image: url("images/explore/model_12.gif");}
+            #nav_01:hover {background-image: url("images/explore/model-c_12.gif");}
+            #nav_02 {background-image: url("images/explore/model_13.gif");}
+            #nav_02:hover {background-image: url("images/explore/model-c_13.gif");}
+            #nav_03 {background-image: url("images/explore/model_14.gif");}
+            #nav_03:hover {background-image: url("images/explore/model-c_14.gif");}
+			#nav_04 {background-image: url("images/explore/model_15.gif");}
+            #nav_04:hover {background-image: url("images/explore/model-c_15.gif");}
+	    #nav_05 {background-image: url("images/explore/model_18.gif");}
+            #nav_05:hover {background-image: url("images/explore/model_18a.gif");}
+        </style>
+        
+        <div class="button-group">
+            <a href="#" id="nav_01" class="image_button"  style=" width:84px"  onclick="showContent('content1')"></a>
+             <a href="#" id="nav_02" class="image_button"  style=" width:68px"  onclick="showContent('content2')"></a>
+            <a href="#" id="nav_05" class="image_button"  style=" width:64px"  onclick="showContent('content3')"></a>
+             
+        </div>
+        
+        
                 </div>
+
             </div>
         </div>
     </div>

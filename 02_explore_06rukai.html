@@ -34,6 +34,7 @@
 			color:#FFF;
 			padding:15px; 
 			margin-bottom:30px;
+			border-radius:10px;
 			
 		}
 		
@@ -41,8 +42,9 @@
 		.textbox_video {
 			background-color:#F3F3F3;			
 			padding:10px; 
+			border-radius:10px;
 					
-		}	
+		}		
 
 		.title2 {
 			color:#03C;
@@ -103,6 +105,10 @@
                    <br>				   
 
                     <div class="textbox_video"><a href="https://youtu.be/ItZ24IsRJRY" target="_blank" rel="noopener noreferrer">小鬼湖之戀 (杜安琪、賴聖偉演唱)</a><p>小鬼湖之戀是魯凱族著名的單旋律歌謠。</p>
+                    <center>
+<iframe style="margin-bottom:10px" src="https://www.youtube.com/embed/ItZ24IsRJRY" title="魯凱族-小鬼湖之戀(杜安琪、賴聖偉演唱)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 													
                    
                    </div>
@@ -123,6 +129,9 @@
                    <br>
 				   
 					<div class="textbox_video"><a href="https://youtu.be/dLiIEX6u6GU" target="_blank" rel="noopener noreferrer">收穫祭歌舞 (大南部落)</a><p>對魯凱族人而言，舞蹈是一種社會性禮儀，男性以山豬牙裝飾代表善獵，獵過許多山豬者，則頭上飾以百合花，階級愈高服裝愈華麗。</p>
+                    <center>
+<iframe style="margin-bottom:10px"src="https://www.youtube.com/embed/dLiIEX6u6GU" title="魯凱族-收穫祭歌舞(大南部落)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 					
                    </div>
@@ -130,12 +139,33 @@
 
                 </div>
                 <div class="button-group">
-                    <a href="#" onclick="showContent('content1')"><img src="images/explore/model_12.gif" alt=""></a>
-                    <a href="#" onclick="showContent('content2')"><img src="images/explore/model_13.gif" alt=""></a>
-                    <a href="#" onclick="showContent('content3')"><img src="images/explore/model_14.gif" alt=""></a>
-                    <a href="#" onclick="showContent('content4')"><img src="images/explore/model_15.gif" alt=""></a>
                    
+          <style>
+             .image_button {
+                 display:inline-block;
+ 				 height: 48px;
+              }
+
+            #nav_01 {background-image: url("images/explore/model_12.gif");}
+            #nav_01:hover {background-image: url("images/explore/model-c_12.gif");}
+            #nav_02 {background-image: url("images/explore/model_13.gif");}
+            #nav_02:hover {background-image: url("images/explore/model-c_13.gif");}
+            #nav_03 {background-image: url("images/explore/model_14.gif");}
+            #nav_03:hover {background-image: url("images/explore/model-c_14.gif");}
+			#nav_04 {background-image: url("images/explore/model_15.gif");}
+            #nav_04:hover {background-image: url("images/explore/model-c_15.gif");}
+        </style>
+        
+        <div class="button-group">
+            <a href="#" id="nav_01" class="image_button"  style=" width:84px"  onclick="showContent('content1')"></a>
+             <a href="#" id="nav_02" class="image_button"  style=" width:68px"  onclick="showContent('content2')"></a>
+            <a href="#" id="nav_03" class="image_button"  style=" width:64px"  onclick="showContent('content3')"></a>
+             <a href="#" id="nav_04" class="image_button"  style=" width:75px"  onclick="showContent('content4')"></a>
+        </div>
+        
+        
                 </div>
+
             </div>
         </div>
     </div>
