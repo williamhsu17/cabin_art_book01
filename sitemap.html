@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,37 @@
     <script src="js/htmlinclude.js"></script>
     <include src="partial/header.html"></include>
     <link rel="stylesheet" href="css/introductory.css">
-    
+
     <style>
-        a{
-            color:#FF0;
+        a {
+            color: #FF0;
         }
-        a:hover{
-            color:#F00;		
+
+        a:hover {
+            color: #F00;
         }
-        code, code a{
+
+        code,
+        code a {
             color: #100e72 !important;
         }
+
         .tree_1 {
             background-color: #dbf6d3;
         }
+
         .tree_2 {
             background-color: #f9ccff;
         }
+
         .tree_3 {
             background-color: #ccd2ff;
         }
+
         /* It's supposed to look like a tree diagram */
-        .tree, .tree ul, .tree li {
+        .tree,
+        .tree ul,
+        .tree li {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -40,71 +50,90 @@
             margin: 0 0 1em;
             text-align: center;
         }
-        .tree, .tree ul {
+
+        .tree,
+        .tree ul {
             display: table;
         }
+
         .tree ul {
-        width: 100%;
+            width: 100%;
         }
-            .tree li {
-                display: table-cell;
-                padding: .5em 0;
-                vertical-align: top;
-            }
-                /* _________ */
-                .tree li:before {
-                    outline: solid 1px #666;
-                    content: "";
-                    left: 0;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-                .tree li:first-child:before {left: 50%;}
-                .tree li:last-child:before {right: 50%;}
 
-                .tree code, .tree span {
-                    border: solid .1em #666;
-                    border-radius: .2em;
-                    display: inline-block;
-                    margin: 0 .2em .5em;
-                    padding: .2em .5em;
-                    position: relative;
-                }
-                /* If the tree represents DOM structure */
-                .tree code {
-                    font-family: monaco, Consolas, 'Lucida Console', monospace;
-                }
+        .tree li {
+            display: table-cell;
+            padding: .5em 0;
+            vertical-align: top;
+        }
 
-                    /* | */
-                    .tree ul:before,
-                    .tree code:before,
-                    .tree span:before {
-                        outline: solid 1px #666;
-                        content: "";
-                        height: .5em;
-                        left: 50%;
-                        position: absolute;
-                    }
-                    .tree ul:before {
-                        top: -.5em;
-                    }
-                    .tree code:before,
-                    .tree span:before {
-                        top: -.55em;
-                    }
+        /* _________ */
+        .tree li:before {
+            outline: solid 1px #666;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .tree li:first-child:before {
+            left: 50%;
+        }
+
+        .tree li:last-child:before {
+            right: 50%;
+        }
+
+        .tree code,
+        .tree span {
+            border: solid .1em #666;
+            border-radius: .2em;
+            display: inline-block;
+            margin: 0 .2em .5em;
+            padding: .2em .5em;
+            position: relative;
+        }
+
+        /* If the tree represents DOM structure */
+        .tree code {
+            font-family: monaco, Consolas, 'Lucida Console', monospace;
+        }
+
+        /* | */
+        .tree ul:before,
+        .tree code:before,
+        .tree span:before {
+            outline: solid 1px #666;
+            content: "";
+            height: .5em;
+            left: 50%;
+            position: absolute;
+        }
+
+        .tree ul:before {
+            top: -.5em;
+        }
+
+        .tree code:before,
+        .tree span:before {
+            top: -.55em;
+        }
 
         /* The root node doesn't connect upwards */
-        .tree > li {margin-top: 0;}
-            .tree > li:before,
-            .tree > li:after,
-            .tree > li > code:before,
-            .tree > li > span:before {
+        .tree>li {
+            margin-top: 0;
+        }
+
+        .tree>li:before,
+        .tree>li:after,
+        .tree>li>code:before,
+        .tree>li>span:before {
             outline: none;
-            }
-	</style>
-    
+        }
+    </style>
+
 </head>
+
 <body style="background-color: #020080;">
     <div class="container mx-auto container-section" id="container-section-image">
         <div class="row">
@@ -114,7 +143,8 @@
                     <img src="images/intro_side/index_01_02.gif" id="nav-section-image" alt="網站導覽">
                     <include src="partial/nav.html"></include>
                 </div>
-                <div class="content" style="background-color: white; margin-right: 60px; margin-left: 26px; padding-left: 30px; padding-top: 30px; height: 340px;">
+                <div class="content"
+                    style="background-color: white; margin-right: 60px; margin-left: 26px; padding-left: 30px; padding-top: 30px; height: 340px;">
                     <!-- content 放在這邊 -->
                     <figure>
                         <ul class="tree">
@@ -124,11 +154,15 @@
                                         <ul>
                                             <li><code class="tree_2"><a href="01_music.html">原住民音樂</a></code>
                                                 <ul>
-                                                    <li><code class="tree_1"><a href="01_music_life.html">部落之歌</a></code>
+                                                    <li><code
+                                                            class="tree_1"><a href="01_music_life.html">部落之歌</a></code>
                                                         <ul>
-                                                            <li><code class="tree_1"><a href="01_music_class.html">音樂教室</a></code>
+                                                            <li><code
+                                                                    class="tree_1"><a href="01_music_class.html">音樂教室</a></code>
                                                                 <ul>
-                                                                    <li><code class="tree_1"><a href="01_music_meseum.html">樂器家族</a></code></li>
+                                                                    <li><code
+                                                                            class="tree_1"><a href="01_music_meseum.html">樂器家族</a></code>
+                                                                    </li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
@@ -137,9 +171,12 @@
                                             </li>
                                             <li><code class="tree_2"><a href="01_dance.html">原住民的舞蹈</a></code>
                                                 <ul>
-                                                    <li><code class="tree_1"><a href="01_dance _main01.html">內涵</a></code>
+                                                    <li><code
+                                                            class="tree_1"><a href="01_dance _main01.html">內涵</a></code>
                                                         <ul>
-                                                            <li><code class="tree_1"><a href="01_dance _main02.html">特色</a></code></li>
+                                                            <li><code
+                                                                    class="tree_1"><a href="01_dance _main02.html">特色</a></code>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -150,17 +187,24 @@
                                         <ul>
                                             <li><code class="tree_3"><a href="02_explore_01amis.html">阿美族</a></code>
                                                 <ul>
-                                                    <li><code class="tree_3"><a href="02_explore_02ataya.html">泰雅族</a></code>
+                                                    <li><code
+                                                            class="tree_3"><a href="02_explore_02ataya.html">泰雅族</a></code>
                                                         <ul>
-                                                            <li><code class="tree_3"><a href="02_explore_03paiwan.html">排灣族</a></code>
+                                                            <li><code
+                                                                    class="tree_3"><a href="02_explore_03paiwan.html">排灣族</a></code>
                                                                 <ul>
-                                                                    <li><code class="tree_3"><a href="02_explore_04bunun.html">布農族</a></code>
+                                                                    <li><code
+                                                                            class="tree_3"><a href="02_explore_04bunun.html">布農族</a></code>
                                                                         <ul>
-                                                                            <li><code class="tree_3"><a href="02_explore_05puyuma.html">卑南族</a></code>
+                                                                            <li><code
+                                                                                    class="tree_3"><a href="02_explore_05puyuma.html">卑南族</a></code>
                                                                                 <ul>
-                                                                                    <li><code class="tree_3"><a href="02_explore_06rukai.html">魯凱族</a></code>
+                                                                                    <li><code
+                                                                                            class="tree_3"><a href="02_explore_06rukai.html">魯凱族</a></code>
                                                                                         <ul>
-                                                                                            <li><code class="tree_3"><a href="02_explore_07beizhou.html">北鄒族</a></code></li>
+                                                                                            <li><code
+                                                                                                    class="tree_3"><a href="02_explore_07beizhou.html">北鄒族</a></code>
+                                                                                            </li>
                                                                                         </ul>
                                                                                     </li>
                                                                                 </ul>
@@ -175,16 +219,21 @@
                                             </li>
                                             <li><code class="tree_3"><a href="02_explore_08nanzhou.html">南鄒族</a></code>
                                                 <ul>
-                                                    <li><code class="tree_3"><a href="02_explore_09saixia.html">賽夏族</a></code>
+                                                    <li><code
+                                                            class="tree_3"><a href="02_explore_09saixia.html">賽夏族</a></code>
                                                         <ul>
-                                                            <li><code class="tree_3"><a href="02_explore_10dawu.html">達悟族</a></code>
+                                                            <li><code
+                                                                    class="tree_3"><a href="02_explore_10dawu.html">達悟族</a></code>
                                                                 <ul>
-                                                                    <li><code class="tree_3"><a href="02_explore_11shao.html">邵族</a></code>
+                                                                    <li><code
+                                                                            class="tree_3"><a href="02_explore_11shao.html">邵族</a></code>
                                                                         <ul>
-                                                                            <li><code class="tree_3"><a href="02_explore_13gemalan.html">噶瑪蘭族</a></code>
+                                                                            <li><code
+                                                                                    class="tree_3"><a href="02_explore_13gemalan.html">噶瑪蘭族</a></code>
                                                                                 <ul>
-                                                                                    <li><code class="tree_3"><a href="02_explore_14xilaya.html">平埔族</a></code>
-                                                                                        
+                                                                                    <li><code
+                                                                                            class="tree_3"><a href="02_explore_14xilaya.html">平埔族</a></code>
+
                                                                                     </li>
                                                                                 </ul>
                                                                             </li>
@@ -213,7 +262,7 @@
         </div>
     </div>
     <script type="text/javascript">
-         window.onload=function(){
+        window.onload = function () {
             // 按照頁面需求更換
             const link_background_image = 'images/bg.jpg';
             const link_nav_image = 'images/introductory/index_07.gif';
@@ -225,4 +274,5 @@
         }
     </script>
 </body>
+
 </html>
