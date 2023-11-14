@@ -19,6 +19,8 @@ body {
 }
 .nav-links-section {
     display: inline;
+    float: right;
+    margin-top: 1rem;
 }
 .content {
     height: 280px;
@@ -37,7 +39,7 @@ body {
 .nav_link {
     color: black;
     font-size: medium;
-    float: right;
+    /* float: right; */
     margin-right: 20px;
     padding-top: 10px;
     color: white;
